@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script src="script inheritedscopedirective.js"></script>
+</head>
+<body ng-app='app'>
+ <div ng-controller='sample'>
+   Controller : a = {{ a }}, b = {{ b }}<br><br>
+   <button ng-click="changeValueA">Change value A</button>
+   <button ng-click="changeValueB">Change value B</button>
+   <hr>
+   Directive1 Instance 1:<div message></div><br>
+   Directive1 Instance 2:<div message></div>
+   
+ </div>
+</body>
+</html>

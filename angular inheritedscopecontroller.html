@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<script src="angular.min.js"></script>
+<script src="script inheritedscopecontroller.js"></script>
+</head>
+<body ng-app='app'>
+ <div id='div1' ng-controller='sample'>
+   sample: a = {{ a }}, b = {{ b }}<br>
+   a:<input ng-model='a'/><br><br>
+   Sample2 : p={{ o.p }}, q = {{ o.q }}<br>
+   p:<input ng-model='o.p'/><br>
+   <hr>
+      <div id='div2' ng-controller='sample2'>
+        Sample : a = {{ a }}, b = {{ b }}<br>
+        a:<input ng-model='a'/><br>
+        Sample2 parent-a: a:{{ $parent.a }}<br>
+        Sample2 : c = {{ c }}, d = {{ d }}<br><br>
+        Sample2 : p = {{ o.p }}, q = {{ o.q }}<br>
+        p:<input ng-model='o.p'/><br><br>
+      </div>
+ </div>
+</body>
+</html>

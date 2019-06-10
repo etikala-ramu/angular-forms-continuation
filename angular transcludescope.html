@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script src="script transcludescope.js"></script>
+
+</head>
+<body ng-app='app'>
+         <!-- <strong>Shared scope</strong><br>
+          <div id="div1" ng-controller='sample'>
+   This is controller :
+   x={{a.x}},y={{b.y}}
+   <div message1>
+       This is transcluded content
+       x={{a.x}},y={{b.y}} 
+       </div>
+       </div>-->
+       
+      <!--<strong>Inherited scope</strong><br>
+      <div id="div1" ng-controller='sample'>
+   This is controller :
+   x={{a.x}},y={{b.y}}
+   <div message2>
+       This is transcluded content
+       x={{a.x}},y={{$parent.b.y}} 
+    </div>
+</div>-->
+    <!--<strong>Isolated scope</strong><br>
+    <div id="div1" ng-controller='sample'>
+   This is controller :
+   x={{a.x}},y={{b.y}}
+   <div message3>
+       This is transcluded content
+       x={{a.x}},y={{$parent.b.y}}
+    </div>
+    </div>--> 
+    
+      <strong>Maually Transcluded scope</strong><br>
+      <div id="div1" ng-controller='sample'>
+       This is controller :
+       x={{a.x}},y={{b.y}}
+       <div message4>
+       This is transcluded content
+       x={{a.x}},y={{b.y}}
+       </div>
+    </div>
+       <!--<strong>custom Transcluded scope</strong><br>
+       This is controller :
+       x={{a.x}},y={{b.y}}
+       <div message5>
+       This is transcluded content
+       x={{a.x}},y={{b.y}} 
+       </div>-->
+ 
+</body>
+</html>

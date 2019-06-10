@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script src="script transclude.js"></script>
+
+</head>
+<body ng-app='app'>
+ <div ng-controller='sample'>
+   This is Controller : <br><br>
+   <hr>
+   Message1 Instance1 :<div message1></div><br>
+   Message1 Instance2 :<div message1>this is inner message</div><br>
+   Message2 Instance1 :<div message2>this is inner message 2</div>
+   Message3 Instance1 :<div message3>This is inner message 3</div>
+   Message4 Instance1 :<div message4>This is inner message 4</div>
+ </div>
+</body>
+</html>

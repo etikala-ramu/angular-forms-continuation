@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<script src="angular.min.js"></script>
+<script src="script servicecalc.js"></script>
+
+</head>
+<body ng-app="app">
+    <div ng-controller="emp">
+        <div>
+            value of a is {{ a }},
+            but u can change
+            <input type="text" ng-model="a"/><br/>
+
+            value of b is {{ b }},
+            but u can change
+            <input type="text" ng-model="b"/><br/>
+        </div>
+       Sum={{sum}}<br>
+       <button ng-click="doSum()">Calculate</button><br>
+
+
+
+    </div>
+
+</body>
+</html>

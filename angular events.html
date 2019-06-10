@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<script src="angular.js"></script>
+<script src="script events.js"></script>
+<style>
+ table{
+     border-collapse:collapse;
+     font-family:arial;
+ }
+ td{
+     border: 1px solid black;
+         padding :5px;
+ }
+ th{
+     border: 1px solid black;
+         padding :5px;
+         text-align: left;
+ }
+</style>
+</head>
+<body ng-app="myModule">
+
+    <div ng-controller="myController">
+      <table>
+         <thead>
+             <tr>
+                <th>Name</th>
+                <th>Likes</th>
+                <th>Dislikes</th>
+                <th>Likes/Dislikes</th>
+             </tr>
+         </thead>
+         <tbody>
+              <tr ng-repeat="technology in technologies"> 
+                <td>{{ technology.name }}</td>
+                <td>{{ technology.likes }}</td>
+                <td>{{ technology.dislikes }}</td>
+                <td>
+                <input type="button" value="Like" ng-click="increementLikes(technology)">
+                <input type="button" value="Dislike" ng-click="increementDislikes(technology)">
+                </td>
+              </tr>
+         </tbody>
+      </table> 
+    </div>
+
+</body>
+
+</html>

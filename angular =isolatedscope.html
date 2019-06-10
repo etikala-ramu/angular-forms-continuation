@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script src="script =isolatedscope.js"></script>
+
+</head>
+<body ng-app='app'>
+ <div ng-controller='sample'>
+   Controller : empno={{emp.empno}},empname={{emp.empname}}<br><br>
+   Ename:<input ng-model="emp.empname"/>
+   <hr>
+   Directive1 Instance1 : <div message employee="emp"></div><br>
+   Directive1 Instance2 : <div message employee="emp2"></div>
+   <hr>
+   Directive2 Instance1 : <div message2 o-emp="emp2"></div>
+ </div>
+</body>
+</html>
