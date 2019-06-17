@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="script $broadcast$emit.js"></script>
+
+</head>
+<body ng-app="app">
+ <div  ng-controller="calc1" style="border: 1px" solid blue;margin: 5px;padding:5px>
+       <strong>Parent Controller </strong><br>
+       a={{a}}<br>
+       b={{b}}<br>
+      sum={{a + b}}
+      <div ng-controller="child1calc1" style="border: 1px" solid green;margin: 5px;padding:5px>
+      <strong>Child Controller </strong>
+        
+      </div>
+      
+      
+ </div>
+ <div  ng-controller="calc2" style="border: 1px" solid blue;margin: 5px;padding:5px>
+       <strong>Sibling </strong><br>
+       c={{c}}<br>
+       d={{d}}<br>
+      sum={{c + d}}
+
+ </div>
+</body>
+</html>

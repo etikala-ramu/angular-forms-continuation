@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="script $apply$digest.js"></script>
+
+</head>
+<body ng-app="app">
+ <div id="div1" ng-controller="emp">
+      a=<input ng-model="a"/>
+      <div>a={{a}}</div>
+      <hr>
+      b=<input ng-model="b"/>
+      <div>b={{b}}</div>
+      <hr>
+      <button ng-click="calcSum()">Sum</button>
+      <button onclick="btnClick()">sum</button>
+      <div>sum={{s}}</div>
+      
+      
+ </div>
+ 
+</body>
+</html>

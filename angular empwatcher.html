@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script src="script empwatcher.js"></script>
+
+</head>
+<body ng-app="app">
+ <div ng-controller="emp">
+      <div ng-repeat="o in emps">
+         <div>{{o.empno}} - {{o.ename}}</div>
+      </div>
+      <div>
+          <input type ='text' ng-model='newPlayer'>
+      </div>
+      <div>
+          <input type='text' ng-model='modifiedName'>
+          <input type='text' ng-model='desired'>
+      </div>
+      <button ng-click="addEmp()">add</button>
+      <button ng-click="modify3rdEmp(desired)">modify 3rd Employee</button>
+      
+ </div>
+ 
+</body>
+</html>
